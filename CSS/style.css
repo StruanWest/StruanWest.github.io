@@ -1,0 +1,249 @@
+body 
+{
+    background-color: rgb(24, 24, 24);
+    font-size: 17.5px;
+    background-image: url('../images/background.png');
+    font-family: Arial;
+}
+
+.topText 
+{
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+}
+
+/*----TEXT----*/
+    /*----NEON TEXT----*/
+.headerTop 
+{
+    font-family: Avenir;
+    font-size: 80px;
+    animation: flicker 1.5s infinite alternate;  
+    text-align: center;
+    margin-top: 175px;
+}
+
+.neonText 
+{
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(225, 0, 255),
+    0 0 82px rgb(225, 0, 255),
+    0 0 92px rgb(225, 0, 255),
+    0 0 102px rgb(225, 0, 255),
+    0 0 151px rgb(225, 0, 255),
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% 
+    {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(225, 0, 255),
+        0 0 80px rgb(225, 0, 255),
+        0 0 90px rgb(225, 0, 255),
+        0 0 100px rgb(225, 0, 255),
+        0 0 150px rgb(255, 0, 221);
+    }
+    20%, 24%, 55% 
+    {        
+        text-shadow: none;
+    }    
+}
+  /*----NEON TEXT END----*/
+  
+h2
+{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -75px;
+    margin-bottom: 50px;
+}
+
+.subTitle
+{
+    color: #838899;
+    font-size: 45px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -25px;
+}
+
+.description-text
+{
+    color: white;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.section
+{
+    color: white;
+    overflow-y: auto;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*
+    margin-left: 25%;
+    */
+}
+
+.section-title
+{
+    font-family: Avenir;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #838899;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /*
+    color: #2e313a;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
+    font-family: alternate-gothic-no-2-d;
+    */
+}
+
+.section-text
+{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bottomSection
+{
+    color: white;
+    overflow-y: auto;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*
+    margin-left: 25%;
+    */
+}
+
+  /*----IMAGES----*/
+.icon
+{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#facebook { background-image: url('../images/buttons/facebook.png'); }
+#instagram { background-image: url('../images/buttons/instagram.png'); }
+#twitter { background-image: url('../images/buttons/twitter.png'); }
+
+.video-right
+{
+    width: 65%;
+    min-width: 2px;
+    position:relative;
+    display: block;
+    float: right;
+    clear: right;
+    overflow: hidden;
+    background-size: 100%;
+    box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.video-left
+{
+    width: 65%;
+    min-width: 2px;
+    position:relative;
+    display: block;
+    float: left;
+    clear: left;
+    overflow: hidden;
+    background-size: 100%;
+    box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+  /*----GOTO BUTTONS----*/
+.gotoButton
+{
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    display: inline-block;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    */
+}
+
+.backToTopButton
+{
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    display: inline-block;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 150px;
+    margin-left: 48%;
+    margin-right: 48%;
+}
+
+.gotoButtonSide
+{
+    transition: all .25s ease-in-out;
+    position: fixed;
+    top: 20px;
+    text-align: center;
+
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    display: table-column;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 25px;
+
+    margin-left: 20px;
+    margin-right: 5px;
+    /*
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    */
+}
+
+#aboutMeButton{margin-top: 5%;}
+#satNavButton{margin-top: 15%;}
+#bowlingButton{margin-top: 25%;}
+#danceButton{margin-top: 35%;}
+
+html 
+{ 
+    scroll-behavior: smooth;
+}
